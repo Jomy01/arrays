@@ -1,0 +1,38 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            //al poner [] indicamos que es una lista de enteros, de 5 enteros en este caso
+            int[] puntuaciones = new int[10];
+            //el primer jugador es el cero
+            puntuaciones[0] = 99;
+            //puntuacion del segundo jugador
+            puntuaciones[1]= 55;
+            puntuaciones[2]= 50;
+            puntuaciones[3]= 45;
+            puntuaciones[4]= 40;
+//hemos dicho que habría 5 puntuaciones y siempre empieza en 0, por lo que 4 es el ultimo elemento de la lista
+            
+            //para imprimir todas las puntuaciones independientemente de las que haya usamos un FOR con length
+            for(int contador = 0; contador < puntuaciones.Length; contador++)
+            {
+                
+                Console.WriteLine("La puntuacion del jugador es : " + puntuaciones[contador]);
+            }
+            
+            
+            //imprimir la puntuacion del primer jugador
+            //Console.WriteLine("La puntuacion del primer jugador es: " + puntuaciones[0]);
+            //imprimir la puntuacion del segundo jugador
+            //Console.WriteLine("La puntuacion del segundo jugador es: " + puntuaciones[1]);
+        }
+    }
+}
