@@ -13,14 +13,8 @@ public class Program
 		
 		for (int i = 0; i < 5 ; i++)
 		{
-		Console.WriteLine("Tus números favoritos son: " + numsfavoritos[i]);
+		Console.WriteLine("Tu " + (i+1) + "º número favorito es: " + numsfavoritos[i]);
 	  }
- //Console.WriteLine("Tu primer número favorito es: " + numsfavoritos[0]);
- //Console.WriteLine("Tu segundo número favorito es: " + numsfavoritos[1]);
- //Console.WriteLine("Tu tercer número favorito es: " + numsfavoritos[2]);
- //Console.WriteLine("Tu cuarto número favorito es: " + numsfavoritos[3]);
- //Console.WriteLine("Tu quinto número favorito es: " + numsfavoritos[4]);
 
-	
 	}
 }
