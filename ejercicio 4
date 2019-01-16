@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int tamano;
+		Console.WriteLine("¿De qué tamaño quieres la lista?");
+		tamano = Convert.ToInt32(Console.ReadLine());
+		
+		string[] nombres = new string[tamano];
+			
+		for (int i = 0; i < tamano; i++)
+		{
+		Console.WriteLine("Introduce el nombre " + (i+1));
+		nombres[i] = Console.ReadLine();
+		}
+		
+		for (int i = 0; i < tamano; i++)
+		 {
+			Console.WriteLine("El nombre número " + (i+1) + " es: " + nombres[i]);
+		 }
+	}
+}
